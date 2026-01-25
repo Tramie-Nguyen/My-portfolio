@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
+    <script src="https://unpkg.com/vue@3.4.21/dist/vue.global.js"></script>
   </head>
   <body>
     <!-- Navigation bar -->
@@ -38,19 +39,93 @@
     <section class="home" id="home">
       <div class="text">
         <h1>Hi, I'm <span>Tramie</span></h1>
-        <h3 class="text-animation">I'm a <span> </span></h3>
+        <h3 class="text-animation">
+          I'm a
+          <ol class="option">
+            <li><span>Business Analyst Intern</span></li>
+            <li><span>Database Administrator Intern</span></li>
+            <li><span>Software Developer Intern</span></li>
+            <li><span>Quality Assurance Intern</span></li>
+            <li><span>UI/UX Designer Intern</span></li>
+          </ol>
+        </h3>
         <p>
           A third-year Information Systems student at HCMUS, aspiring Business
           Analyst with a strong interest in Web Development and UI/UX Design.
         </p>
+        <div class="social-icon">
+          <a
+            href="http://github.com/Tramie-Nguyen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"> </i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/my-nguyen-a496733a5/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ntt.mint._/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/nguyen.my.416252"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <div class="btn">
+          <a href="">Hire</a>
+          <a href=".contact"> Contact</a>
+        </div>
       </div>
-      <div class="social-icon"></div>
 
       <div class="headshot">
         <img src="./cv_pic.png" alt="Tramie's picture" />
       </div>
     </section>
-    <section class="about-me" id="about-me"></section>
+    <section class="about-me" id="about-me">
+      <div class="headshot">
+        <img src="./cv_pic2.png" alt="Tramie's picture" />
+      </div>
+      <div class="text">
+        <h2>About me</h2>
+        <p>
+          My Vietnamese name is Nguyễn Thị Trà My, and my English name is Tramie
+          Nguyen.
+          <br />
+        </p>
+
+        <p>
+          I am a third-year Information Systems student at the Faculty of
+          Information Technology, HCMUS (VNU-HCM).
+        </p>
+        <p>
+          My career orientation is Business Analysis, followed by Database
+          Administration, Web Development, QA/QC, and UI/UX Design. I focus on
+          analyzing business requirements, designing structured information
+          systems, and translating business needs into practical, data-driven
+          solutions. With a systems-thinking mindset and strong analytical
+          skills, I aim to deliver solutions that are both technically sound and
+          user-oriented.
+        </p>
+        <p>
+          I am currently seeking an internship or fresher position to gain
+          hands-on experience and grow in a professional working environment.
+        </p>
+      </div>
+    </section>
+
     <search class="skills" id="skills"></search>
     <section class="projects" id="projects"></section>
     <section class="contact" id="contact"></section>
