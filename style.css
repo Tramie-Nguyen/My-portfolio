@@ -123,8 +123,7 @@ a {
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 50px var(--highlight-color2);
-  cursor: pointer;
-  transition: 0.4 ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .home .headshot img:hover {
@@ -274,8 +273,14 @@ a {
   width: 450px;
   height: auto;
   border-radius: 15%;
+  box-shadow: 0 0 25px var(--highlight-color);
+  transition: 0.3s ease-in-out;
 }
-
+.about-me .headshot img:hover {
+  box-shadow:
+    0 0 25px var(--highlight-color),
+    0 0 50px var(--highlight-color);
+}
 .about-me .text {
   flex: 4;
   color: var(--text-color);
@@ -304,4 +309,124 @@ a {
   text-shadow:
     0 0 25px var(--highlight-color),
     0 0 50px var(--highlight-color);
+}
+
+/* SKILLS */
+.skills {
+  padding: 45px 150px;
+  color: var(--text-color);
+}
+.skills h2 {
+  font-size: 45px;
+  text-align: center;
+  margin: 0px 550px;
+  margin-bottom: 30px;
+
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--text-color);
+  text-shadow: 0 0 25px var(--text-color);
+  transition: 0.3s ease;
+}
+.skills h2:hover {
+  transform: scale(1.1) translateY(-5px);
+  text-shadow:
+    0 0 25px var(--text-color),
+    0 0 50px var(--text-color);
+}
+/* Programming */
+.skills h3 {
+  color: var(--highlight-color2);
+  text-align: center;
+  font-size: 23px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+.skills .cells,
+.uiux .cell {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  color: var(--background-color);
+}
+
+.skills .cells .cell,
+.skills .uiux .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--text-color);
+  padding: 10px 25px;
+  border-radius: 15px;
+  background: var(--text-color);
+  transition: 0.3s ease;
+}
+.skills .cells .cell span,
+.uiux .cell span {
+  font-size: 19px;
+  font-weight: 500;
+}
+.skills .cells .cell img,
+.skills .database .cells img,
+.skills .db-and-uiux .uiux img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+/* database and ui/ux*/
+.skills .db-and-uiux {
+  display: flex;
+  justify-content: center;
+  gap: 185px;
+}
+.skills .db-and-uiux .database .cells {
+  flex: 5;
+}
+.skills .db-and-uiux .database .cells {
+  display: flex;
+  justify-content: center;
+}
+.skills .db-and-uiux .database .cells img:last-child {
+  width: 150px;
+}
+
+.skills .cells .cell:hover,
+.uiux .cell:hover {
+  border: 4px solid var(--highlight-color);
+  transform: scale(1.1);
+}
+
+/* ui/ux */
+.skills .db-and-uiux .uiux .cell {
+  flex: 1;
+}
+
+/* ba-and-sa */
+.skills .ba-and-sa .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.business-process,
+.system-analysis,
+.system-design {
+  border: 2px solid var(--text-color);
+  border-radius: 10%;
+  padding: 0px 20px;
+}
+.business-process h3,
+.system-analysis h3,
+.system-design h3 {
+  color: var(--text-color);
+  padding: 10px;
+}
+.business-process {
+  padding: 50px;
+}
+.skills .ba-and-sa ol {
+  list-style: disc;
 }
