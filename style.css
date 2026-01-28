@@ -11,10 +11,6 @@
   --background-color: hsla(209, 83%, 10%, 1);
   --highlight-color: hsl(203.41, 90.28%, 48.43%);
   --highlight-color2: hsl(202.96, 95.15%, 59.61%);
-  --highlight-color3: hsl(204.19, 96.99%, 73.92%);
-  --highlight-color4: hsl(205.22, 97.18%, 86.08%);
-  --highlight-color5: hsl(208, 93.75%, 93.73%);
-  --highlight-color6: hsl(208, 100%, 97.06%);
   --main-color: hsl(205.14, 100%, 43.53%);
 }
 
@@ -321,7 +317,6 @@ a {
   text-align: center;
   margin: 0px 550px;
   margin-bottom: 30px;
-
   padding-bottom: 5px;
   border-bottom: 2px solid var(--text-color);
   text-shadow: 0 0 25px var(--text-color);
@@ -338,8 +333,7 @@ a {
   color: var(--highlight-color2);
   text-align: center;
   font-size: 23px;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding: 30px 0px;
 }
 .skills .cells,
 .uiux .cell {
@@ -409,24 +403,41 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px;
+  gap: 90px;
 }
+
 .business-process,
 .system-analysis,
 .system-design {
-  border: 2px solid var(--text-color);
-  border-radius: 10%;
-  padding: 0px 20px;
-}
-.business-process h3,
-.system-analysis h3,
-.system-design h3 {
+  border: 4px solid var(--main-color);
+  border-radius: 15px;
+  background: var(--main-color);
   color: var(--text-color);
-  padding: 10px;
+  font-weight: 500;
+  transition: 0.3s ease;
 }
-.business-process {
-  padding: 50px;
+
+.business-process h4,
+.system-analysis h4,
+.system-design h4 {
+  text-align: center;
+  font-size: 23px;
+  padding: 20px 25px 10px;
 }
-.skills .ba-and-sa ol {
+
+.skills .ba-and-sa .content ol {
   list-style: disc;
+  font-size: 18px;
+  padding: 0px 30px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.business-process:hover,
+.system-analysis:hover,
+.system-design:hover {
+  background: var(--text-color);
+  transform: scale(1.1);
+  border: 4px solid var(--main-color);
+  color: var(--background-color);
 }
