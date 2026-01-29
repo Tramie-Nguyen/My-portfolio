@@ -29,10 +29,17 @@ a {
 
 /* navigation bar */
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  backdrop-filter: blur(10);
   display: flex;
   justify-content: space-between;
   padding: 40px 150px;
   align-items: center;
+  z-index: 1;
 }
 
 .nav a {
@@ -82,13 +89,15 @@ a {
   border-bottom: 3px solid var(--highlight-color2);
 }
 
+section {
+  min-height: 100vh;
+  padding: 150px 150px;
+}
 /* HOME */
 /* Picture */
 .home {
   display: flex;
-  padding: 40px 150px;
   align-items: center;
-  margin-top: 50px;
   color: var(--text-color);
 }
 
@@ -239,7 +248,6 @@ a {
 
 .about-me .content {
   display: flex;
-  padding: 150px 150px;
   justify-content: center;
   align-items: center;
 }
@@ -309,7 +317,6 @@ a {
 
 /* SKILLS */
 .skills {
-  padding: 45px 150px;
   color: var(--text-color);
 }
 .skills h2 {
@@ -333,7 +340,7 @@ a {
   color: var(--highlight-color2);
   text-align: center;
   font-size: 23px;
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 .skills .cells,
 .uiux .cell {
@@ -341,7 +348,7 @@ a {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   color: var(--background-color);
 }
 
@@ -352,14 +359,14 @@ a {
   align-items: center;
   gap: 10px;
   border: 2px solid var(--text-color);
-  padding: 10px 25px;
+  padding: 7px 25px;
   border-radius: 15px;
   background: var(--text-color);
   transition: 0.3s ease;
 }
 .skills .cells .cell span,
 .uiux .cell span {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 500;
 }
 .skills .cells .cell img,
@@ -421,16 +428,16 @@ a {
 .system-analysis h4,
 .system-design h4 {
   text-align: center;
-  font-size: 23px;
+  font-size: 21px;
   padding: 20px 25px 10px;
 }
 
 .skills .ba-and-sa .content ol {
   list-style: disc;
-  font-size: 18px;
+  font-size: 17px;
   padding: 0px 30px;
   padding-bottom: 20px;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 .business-process:hover,
@@ -440,4 +447,16 @@ a {
   transform: scale(1.1);
   border: 4px solid var(--main-color);
   color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+  width: 50px;
 }
