@@ -9,9 +9,9 @@
   --text-color: hsl(208, 100%, 97.06%);
   --link-color: hsla(227, 81%, 54%, 1);
   --background-color: hsla(209, 83%, 10%, 1);
-  --highlight-color: hsl(203.41, 90.28%, 48.43%);
-  --highlight-color2: hsl(202.96, 95.15%, 59.61%);
-  --main-color: hsl(205.14, 100%, 43.53%);
+  --second-bg-color: hsla(209, 83%, 13%, 1);
+  --main-color: hsl(202.96, 95.15%, 59.61%);
+  --darker-color: hsl(205.14, 100%, 43.53%);
 }
 
 html {
@@ -57,8 +57,8 @@ a {
 }
 
 .nav .left span {
-  color: var(--highlight-color2);
-  text-shadow: 0 0 20px var(--highlight-color2);
+  color: var(--main-color);
+  text-shadow: 0 0 20px var(--main-color);
 }
 
 .nav .left a:hover {
@@ -85,8 +85,8 @@ a {
 
 .nav .right a:hover,
 .nav .right .active {
-  color: var(--highlight-color2);
-  border-bottom: 3px solid var(--highlight-color2);
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
 }
 
 section {
@@ -107,7 +107,7 @@ section {
 }
 
 .home .text h1 {
-  font-size: 50px;
+  font-size: 55px;
   padding-bottom: 10px;
 }
 
@@ -127,15 +127,15 @@ section {
   max-width: 500px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 50px var(--highlight-color2);
+  box-shadow: 0 0 50px var(--main-color);
   transition: 0.3s ease-in-out;
 }
 
 .home .headshot img:hover {
   box-shadow:
-    0 0 25px var(--highlight-color2),
-    0 0 50px var(--highlight-color2),
-    0 0 100px var(--highlight-color2);
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
 }
 
 .home .social-icon a {
@@ -143,21 +143,21 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid var(--highlight-color2);
+  border: 3px solid var(--main-color);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
   font-size: 1.5rem;
-  color: var(--highlight-color2);
+  color: var(--main-color);
   transition: 0.3s ease-in-out;
 }
 
 .home .social-icon a:hover {
   transform: scale(1.2) translateY(-5px);
   color: var(--text-color);
-  border: 3px solid var(--highlight-color);
-  background-color: var(--highlight-color);
-  box-shadow: 0 0 25px var(--highlight-color);
+  border: 3px solid var(--main-color);
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
 }
 
 .home .btn a {
@@ -167,7 +167,7 @@ section {
   font-size: 20px;
   margin-top: 20px;
   margin-right: 20px;
-  border: 2px solid var(--highlight-color);
+  border: 2px solid var(--main-color);
   padding: 10px 23px;
   border-radius: 45px;
   font-weight: 600;
@@ -175,27 +175,27 @@ section {
 }
 
 .home .btn a:first-child {
-  background-color: var(--highlight-color);
+  background-color: var(--main-color);
   color: var(--background-color);
-  box-shadow: 0 0 25px var(--highlight-color);
+  box-shadow: 0 0 25px var(--main-color);
 }
 
 .home .btn a:last-child {
-  color: var(--highlight-color);
+  color: var(--main-color);
 }
 
 .home .btn a:last-child:hover {
   box-shadow:
-    0 0 25px var(--highlight-color),
-    0 0 50px var(--highlight-color);
-  background-color: var(--highlight-color);
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+  background-color: var(--main-color);
   color: var(--background-color);
 }
 
 .home .btn a:first-child:hover {
   box-shadow:
-    0 0 25px var(--highlight-color),
-    0 0 50px var(--highlight-color);
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
 }
 
 /* text animation */
@@ -210,7 +210,7 @@ section {
 }
 .text-animation .option li {
   list-style: none;
-  color: var(--highlight-color2);
+  color: var(--main-color);
   position: relative;
   top: 0;
   animation: slide 21s steps(5) infinite;
@@ -222,7 +222,7 @@ section {
   height: 100%;
   left: 0;
   background: var(--background-color);
-  border-left: 2px solid var(--highlight-color2);
+  border-left: 2px solid var(--main-color);
   animation: typing 4s steps(31) infinite;
 }
 @keyframes typing {
@@ -255,17 +255,15 @@ section {
 .about-me h2 {
   color: var(--text-color);
   padding-bottom: 75px;
-  font-size: 45px;
+  font-size: 55px;
   font-weight: bold;
   text-align: left;
   cursor: pointer;
   transition: 0.3s ease;
 }
-.about-me h2:first-child {
-  text-shadow: 0 0 25px var(--text-color);
-}
+
 .about-me h2:last-child {
-  text-shadow: 0 0 25px var(--highlight-color);
+  color: var(--main-color);
 }
 .about-me h2:hover {
   transform: scale(1.1) translateX(25px);
@@ -277,13 +275,13 @@ section {
   width: 450px;
   height: auto;
   border-radius: 15%;
-  box-shadow: 0 0 25px var(--highlight-color);
+  box-shadow: 0 0 25px var(--main-color);
   transition: 0.3s ease-in-out;
 }
 .about-me .headshot img:hover {
   box-shadow:
-    0 0 25px var(--highlight-color),
-    0 0 50px var(--highlight-color);
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
 }
 .about-me .text {
   flex: 4;
@@ -302,17 +300,17 @@ section {
 .about-me .text span,
 a {
   font-weight: 600;
-  color: var(--highlight-color2);
+  color: var(--main-color);
 }
 
 .about-me .text a {
-  border-bottom: 2px solid var(--highlight-color2);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .about-me .text a:hover {
   text-shadow:
-    0 0 25px var(--highlight-color),
-    0 0 50px var(--highlight-color);
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
 }
 
 /* SKILLS */
@@ -320,24 +318,20 @@ a {
   color: var(--text-color);
 }
 .skills h2 {
-  font-size: 45px;
+  font-size: 55px;
   text-align: center;
   margin: 0px 550px;
   margin-bottom: 30px;
   padding-bottom: 5px;
   border-bottom: 2px solid var(--text-color);
-  text-shadow: 0 0 25px var(--text-color);
   transition: 0.3s ease;
 }
 .skills h2:hover {
   transform: scale(1.1) translateY(-5px);
-  text-shadow:
-    0 0 25px var(--text-color),
-    0 0 50px var(--text-color);
 }
 /* Programming */
 .skills h3 {
-  color: var(--highlight-color2);
+  color: var(--main-color);
   text-align: center;
   font-size: 23px;
   padding: 20px 0px;
@@ -396,7 +390,7 @@ a {
 
 .skills .cells .cell:hover,
 .uiux .cell:hover {
-  border: 4px solid var(--highlight-color);
+  border: 4px solid var(--main-color);
   transform: scale(1.1);
 }
 
@@ -416,9 +410,9 @@ a {
 .business-process,
 .system-analysis,
 .system-design {
-  border: 4px solid var(--main-color);
+  border: 4px solid var(--darker-color);
   border-radius: 15px;
-  background: var(--main-color);
+  background: var(--darker-color);
   color: var(--text-color);
   font-weight: 500;
   transition: 0.3s ease;
@@ -445,7 +439,7 @@ a {
 .system-design:hover {
   background: var(--text-color);
   transform: scale(1.1);
-  border: 4px solid var(--main-color);
+  border: 4px solid var(--darker-color);
   color: var(--background-color);
 }
 
@@ -454,9 +448,147 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
+  background-color: var(--darker-color);
 }
 ::-webkit-scrollbar-track {
   background-color: var(--background-color);
   width: 50px;
+}
+
+/* PROJECTS */
+.projects {
+  color: var(--text-color);
+}
+/* CONTACT */
+.contact h2 {
+  color: var(--text-color);
+  transition: 0.3s ease;
+  font-size: 55px;
+  text-align: center;
+}
+
+.contact h2 span {
+  color: var(--main-color);
+}
+.contact h2:hover {
+  text-shadow: 0 0 25px var(--main-color);
+}
+.contact h3 {
+  color: var(--text-color);
+  text-align: center;
+  padding-bottom: 60px;
+  font-size: 18px;
+}
+
+.contact form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 185px;
+}
+
+.contact form .left {
+  flex: 6;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.contact form .left input {
+  width: 90%;
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 4px solid var(--main-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+.contact form .right {
+  flex: 4;
+  flex-direction: column;
+  display: flex;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+}
+.contact form .right textarea {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border: 4px solid var(--main-color);
+  font-weight: 500;
+}
+.contact form .right button {
+  border-radius: 50px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  background-color: var(--darker-color);
+  color: var(--text-color);
+  border: 2px solid var(--darker-color);
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 0 0 25px var(--darker-color);
+  transition: 0.3s ease-in-out;
+}
+.contact form .right button:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 25px var(--darker-color),
+    0 0 50px var(--darker-color);
+}
+/* FOOTER */
+.footer {
+  padding: 30px 0px;
+  background: var(--second-bg-color);
+  flex-direction: column;
+  display: flex;
+}
+.footer .social {
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer .social a {
+  border: 2px solid var(--main-color);
+  padding: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-5px);
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+  color: var(--text-color);
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
+  gap: 50px;
+}
+
+.footer ul li a {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+.footer ul li a:hover {
+  border-bottom: 3px solid var(--main-color);
+}
+.footer .copyright {
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 16px;
 }
