@@ -1,0 +1,30 @@
+Computer_network-upload_download_files (python + PyQt5):
+    github: https://github.com/Tramie-Nguyen/Computer_network-upload_download_files
+    Time: July 10, 2024 - August 11, 2024
+    Demo ytb: https://youtu.be/kXZ6lzZ8H7I
+
+Hangman (C++, GUI in terminal): 
+    github: https://github.com/Tramie-Nguyen/Hangman
+    Time: August 8, 2024 - August 28, 2024
+    Demo ytb: https://youtu.be/COaJx9xX_1M
+
+The Kitchen God’s Journey to Heaven (AI Game using Unity):
+    github: https://github.com/Tramie-Nguyen/The-Kitchen-Gods-Return-to-Heaven
+    Time: April 6,2025 - May 8, 2025
+    link to the game: https://play.unity.com/en/games/c80a51e2-84fc-476a-a290-c371b51204c7/dua-tao-ve-troi
+    demo game: https://youtu.be/ZfD6FY5S3Yw
+
+Memoir — A Note-Taking App Integrated with Graphs, Calendar, and Maps (Android mobile app using flutter):
+    github: https://github.com/AlanRexcop/CS13002-Memoir
+    Time: Jun 27, 2025 - August 24, 2025
+    demo admin UI: https://youtu.be/s95bm_noR-I
+    automated test ytb: https://youtu.be/Vo8uAFSHNE0
+    demo app ytb: https://www.youtube.com/watch?v=u6y1ftvchu8
+
+
+Portfolio (using HTML + CSS + Vue.js):
+    github: https://github.com/Tramie-Nguyen/My-portfolio
+    Time: Jan 23, 2026
+    demo ytb:
+    
+(python, 2/3/2025): https://github.com/Tramie-Nguyen/search_algorithms_AI
