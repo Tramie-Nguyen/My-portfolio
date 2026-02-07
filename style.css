@@ -33,7 +33,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--background-color);
+  background-color: hsla(209, 83%, 7%, 0.8);
   backdrop-filter: blur(10);
   display: flex;
   justify-content: space-between;
@@ -320,11 +320,11 @@ a {
   color: var(--text-color);
 }
 .skills h2 {
-  font-size: 55px;
+  font-size: 45px;
   text-align: center;
-  margin: 0px 550px;
-  margin-bottom: 30px;
+  margin: 15px 700px;
   padding-bottom: 5px;
+  margin-bottom: 35px;
   border-bottom: 2px solid var(--text-color);
   transition: 0.3s ease;
 }
@@ -402,6 +402,9 @@ a {
 }
 
 /* ba-and-sa */
+.skills {
+  padding: 100px 0px;
+}
 .skills .ba-and-sa .content {
   display: flex;
   justify-content: center;
@@ -445,18 +448,6 @@ a {
   color: var(--background-color);
 }
 
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--darker-color);
-}
-::-webkit-scrollbar-track {
-  background-color: var(--background-color);
-  width: 50px;
-}
-
 /* PROJECTS */
 .projects {
   color: var(--text-color);
@@ -470,29 +461,36 @@ a {
 }
 .prj-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  place-items: start;
   gap: 3rem;
   row-gap: 5rem;
 }
 
 .projects img {
-  height: 10rem;
-  width: auto;
+  max-width: 350px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 .prj-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   border: 2px solid var(--main-color);
   padding: 2rem;
   border-radius: 15px;
   transition: 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 0 5px var(--main-color);
+  cursor: pointer;
 }
-.prj-card:hover {
+.prj-card:hover,
+.prj-card .links a:hover {
   box-shadow:
     0 0 25px var(--main-color),
     0 0 50px var(--main-color);
+  transform: scale(1.02);
 }
 .prj-card .title {
   text-align: center;
@@ -501,7 +499,7 @@ a {
 .prj-card .links {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
   place-items: center;
   gap: 5px;
   row-gap: 15px;
@@ -513,11 +511,14 @@ a {
   padding: 10px 15px;
   border-radius: 1.3rem;
   text-align: center;
+  border: 1px solid var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
 }
 .prj-card .links a:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   justify-self: center;
 }
+
 /* CONTACT */
 .contact h2 {
   color: var(--text-color);
@@ -634,7 +635,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 25px 0px;
-  gap: 50px;
+  gap: 30px;
 }
 
 .footer ul li a {
@@ -650,4 +651,16 @@ a {
   text-align: center;
   margin-top: 50px;
   font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--darker-color);
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background-color);
+  width: 50px;
 }
