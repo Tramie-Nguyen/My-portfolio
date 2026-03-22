@@ -27,8 +27,8 @@
         <a href="#home">Tramie <span>Nguyen </span></a>
       </div>
       <i class="fa-solid fa-bars" id="menu-icon"></i>
-      <div class="right">
-        <a href="#home" class="active">Home</a>
+      <div class="right" id="nav-menu">
+        <a href="#home">Home</a>
         <a href="#about-me">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -43,10 +43,10 @@
           I'm a
           <ol class="option">
             <li><span>Business Analyst Intern</span></li>
+            <li><span>System Analyst Intern</span></li>
             <li><span>Database Administrator Intern</span></li>
+            <li><span>Data Analyst Intern</span></li>
             <li><span>Software Developer Intern</span></li>
-            <li><span>Quality Assurance Intern</span></li>
-            <li><span>UI/UX Designer Intern</span></li>
           </ol>
         </h3>
         <p>
@@ -289,10 +289,10 @@
         <div class="prj-card">
           <img
             src="images/kitchen-god.webp"
-            alt="The Kitchen God’s Journey to Heaven"
+            alt="The Kitchen God's Journey to Heaven"
             class="prj-image"
           />
-          <h3 class="title">The Kitchen God’s Journey to Heaven</h3>
+          <h3 class="title">The Kitchen God's Journey to Heaven</h3>
           <p class="description">
             Game using Unity + C# with AI algorithms <br />
             Time: April 6,2025 - May 8, 2025
@@ -467,5 +467,50 @@
         <p class="copyright">© Tramie Nguyen | All Rights Reserved</p>
       </div>
     </footer>
+
+    <script>
+      // Hamburger toggle
+      const menuIcon = document.getElementById("menu-icon");
+      const navMenu = document.getElementById("nav-menu");
+
+      menuIcon.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+        menuIcon.classList.toggle("fa-bars");
+        menuIcon.classList.toggle("fa-xmark");
+      });
+
+      // Close menu when a nav link is clicked
+      document.querySelectorAll("#nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("open");
+          menuIcon.classList.add("fa-bars");
+          menuIcon.classList.remove("fa-xmark");
+        });
+      });
+
+      // Scroll spy (active nav link)
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll("#nav-menu a");
+
+      function updateActive() {
+        let current = "";
+        sections.forEach((sec) => {
+          // activate a section when its top is within 120 px of the viewport top
+          if (window.scrollY >= sec.offsetTop - 120) {
+            current = sec.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", updateActive);
+      updateActive();
+    </script>
   </body>
 </html>
