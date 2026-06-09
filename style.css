@@ -163,7 +163,8 @@ section {
   box-shadow: 0 0 25px var(--main-color);
 }
 
-.home .btn a {
+.home .btn a,
+#btnDownload {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -183,11 +184,12 @@ section {
   box-shadow: 0 0 25px var(--main-color);
 }
 
-.home .btn a:last-child {
+#btnDownload {
+  background-color: var(--background-color);
   color: var(--main-color);
 }
 
-.home .btn a:last-child:hover {
+#btnDownload:hover {
   box-shadow:
     0 0 25px var(--main-color),
     0 0 50px var(--main-color);
@@ -480,7 +482,7 @@ a {
 .prj-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  place-items: start;
+  align-items: stretch;
   gap: 3rem;
   row-gap: 5rem;
 }
@@ -496,6 +498,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
   border: 2px solid var(--main-color);
   padding: 2rem;
   border-radius: 15px;
@@ -503,6 +506,11 @@ a {
   overflow: hidden;
   box-shadow: 0 0 5px var(--main-color);
   cursor: pointer;
+}
+
+.prj-image {
+  border: 3px solid var(--main-color);
+  margin-bottom: 15px;
 }
 
 .prj-card:hover,
@@ -518,13 +526,32 @@ a {
   padding: 10px;
 }
 
+/* ── Project description as bullet list ── */
+.prj-card .description {
+  list-style: disc;
+  padding-left: 22px;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--text-color);
+  margin-top: 6px;
+  flex: 1; /* đẩy .links xuống cuối card */
+}
+
+.prj-card .description li {
+  padding-bottom: 2px;
+}
+
 .prj-card .links {
   padding-top: 30px;
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 1fr));
   place-items: center;
   gap: 5px;
   row-gap: 15px;
+  width: 100%;
 }
 
 .prj-card .links a {
@@ -535,11 +562,13 @@ a {
   text-align: center;
   border: 1px solid var(--main-color);
   box-shadow: 0 0 10px var(--main-color);
+  width: 100%;
 }
 
 .prj-card .links a:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   justify-self: center;
+  width: auto;
 }
 
 /*contact*/
@@ -738,7 +767,6 @@ a {
     padding: 5rem 2rem;
     background-color: hsla(209, 83%, 7%, 0.97);
     backdrop-filter: blur(12px);
-    /* Hidden by default — slide in when .open is added by JS */
     transform: translateX(100%);
     transition: transform 0.35s ease;
     z-index: 200;
@@ -876,14 +904,12 @@ a {
     gap: 16px;
   }
 
-  /* DB + UI/UX: stack vertically */
   .skills .db-and-uiux {
     flex-direction: column;
     align-items: center;
     gap: 0;
   }
 
-  /* BA & SA cards: stack vertically */
   .skills .ba-and-sa .content {
     flex-direction: column;
     align-items: center;
@@ -903,7 +929,7 @@ a {
     transform: scale(1.03);
   }
 
-  /* ── PROJECTS ── */
+  /* projects */
   .projects {
     padding: 80px 16px 60px;
   }
@@ -925,6 +951,10 @@ a {
   .projects img {
     max-width: 100%;
     width: 100%;
+  }
+
+  .prj-card .description {
+    font-size: 14px;
   }
 
   .prj-card .links {
