@@ -43,9 +43,8 @@
           I'm a
           <ol class="option">
             <li><span>Business Analyst Intern</span></li>
-            <li><span>System Analyst Intern</span></li>
             <li><span>Database Administrator Intern</span></li>
-            <li><span>Data Analyst Intern</span></li>
+            <li><span>Data Engineer Intern</span></li>
             <li><span>Software Developer Intern</span></li>
           </ol>
         </h3>
@@ -146,8 +145,9 @@
 
     <section class="skills" id="skills">
       <h2>Skills</h2>
+
       <div class="programming">
-        <h3>Programming & Web Technologies</h3>
+        <h3>Programming Languages</h3>
         <div class="cells">
           <div class="cell">
             <img src="images/c++.webp" alt="C++" />
@@ -158,6 +158,16 @@
             <span>Python</span>
           </div>
           <div class="cell">
+            <img src="images/JS.webp" alt="Javascript" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="programming">
+        <h3>Frontend</h3>
+        <div class="cells">
+          <div class="cell">
             <img src="images/html.webp" alt="HTML" />
             <span>HTML</span>
           </div>
@@ -166,42 +176,77 @@
             <span>CSS</span>
           </div>
           <div class="cell">
-            <img src="images/JS.webp" alt="Javascript" />
-            <span>JS</span>
+            <img src="images/react.png" alt="React.js" />
+            <span>React.js</span>
+          </div>
+          <div class="cell">
+            <img src="images/taiwindcss.png" alt="Tailwind CSS" />
+            <span>Tailwind CSS</span>
           </div>
         </div>
       </div>
-      <div class="db-and-uiux">
-        <div class="database">
-          <h3>Database Management Systems</h3>
-          <div class="cells">
-            <div class="cell">
-              <img src="images/sql-server.webp" alt="SQL" />
-              <span>Microsoft SQL Server</span>
-            </div>
-            <div class="cell">
-              <img src="images/oracle.webp" alt="Oracle" />
-            </div>
+
+      <div class="programming">
+        <h3>Backend</h3>
+        <div class="cells">
+          <div class="cell">
+            <img src="images/node.png" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
+          <div class="cell">
+            <img src="images/express.png" alt="Express.js" />
+            <span>Express.js</span>
           </div>
         </div>
-        <div class="uiux">
-          <h3>UI/UX Design</h3>
+      </div>
+
+      <div class="programming">
+        <h3>Databases</h3>
+        <div class="cells">
+          <div class="cell">
+            <img src="images/sql-server.webp" alt="SQL Server" />
+            <span>SQL Server</span>
+          </div>
+          <div class="cell">
+            <img src="images/oracle.webp" alt="Oracle" />
+            <span>Oracle Database</span>
+          </div>
+          <div class="cell">
+            <img src="images/mongodb.png" alt="Oracle" />
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+      <div class="programming">
+        <h3>Tools</h3>
+        <div class="cells">
+          <div class="cell">
+            <i class="fa-brands fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="cell">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="cell">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Postman</span>
+          </div>
           <div class="cell">
             <img src="images/figma.webp" alt="Figma" />
             <span>Figma</span>
           </div>
         </div>
       </div>
+
       <div class="ba-and-sa">
-        <h3>Business Analysis & System Analysis</h3>
+        <h3>Analysis & Design</h3>
         <div class="content">
           <div class="business-process">
-            <h4>Business Process Analysis</h4>
+            <h4>Business Analysis</h4>
             <ol>
               <li>Business Use Case</li>
               <li>Use Case Specification</li>
-              <li>Activity Diagram</li>
-              <li>Functional Decomposition Diagram</li>
             </ol>
           </div>
           <div class="system-analysis">
@@ -212,11 +257,10 @@
             </ol>
           </div>
           <div class="system-design">
-            <h4>System Design</h4>
+            <h4>Database Design & UML</h4>
             <ol>
-              <li>Database Design <br />(Conceptual → Logical → Physical)</li>
-              <li>Analysis Class Diagram</li>
-              <li>Sequence Diagram</li>
+              <li>Database Design (Conceptual → Logical → Physical)</li>
+              <li>UML Modeling</li>
             </ol>
           </div>
         </div>
@@ -226,6 +270,32 @@
     <section class="projects" id="projects">
       <h2 class="heading">Projects</h2>
       <div class="prj-box">
+        <div class="prj-card">
+          <img
+            src="images/todolist.png"
+            alt="Computer network/ upload download files"
+            class="prj-image"
+          />
+          <h3 class="title">TodoX Application</h3>
+          <ul class="description">
+            <li>Using React.js, Express.js, MongoDB, Tailwind CSS</li>
+            <li>Time: June 2026</li>
+          </ul>
+          <div class="links">
+            <a
+              href="https://github.com/Tramie-Nguyen/To-do-list"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Source Code</a
+            >
+            <a
+              href="https://to-do-list-clsa.onrender.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live Demo</a
+            >
+          </div>
+        </div>
         <div class="prj-card">
           <img
             src="images/computer-network.webp"
@@ -367,33 +437,6 @@
               target="_blank"
               rel="noopener noreferrer"
               >Video Demo 2</a
-            >
-          </div>
-        </div>
-
-        <div class="prj-card">
-          <img
-            src="images/hangman.webp"
-            alt="Hangman game using C++"
-            class="prj-image"
-          />
-          <h3 class="title">Hangman game</h3>
-          <ul class="description">
-            <li>Using C++</li>
-            <li>Time: August 8, 2024 – August 28, 2024</li>
-          </ul>
-          <div class="links">
-            <a
-              href="https://github.com/Tramie-Nguyen/Hangman"
-              target="_blank"
-              rel="noopener noreferrer"
-              >View Source Code</a
-            >
-            <a
-              href="https://youtu.be/COaJx9xX_1M"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Video Demo</a
             >
           </div>
         </div>

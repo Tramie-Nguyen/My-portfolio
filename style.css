@@ -422,6 +422,10 @@ a {
 .skills .db-and-uiux .uiux .cell {
   flex: 1;
 }
+.programming .cells .cell i {
+  font-size: 28px;
+  color: var(--background-color);
+}
 
 /* ba-and-sa */
 .skills .ba-and-sa .content {
@@ -549,7 +553,6 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 1fr));
   place-items: center;
-  gap: 5px;
   row-gap: 15px;
   width: 100%;
 }
