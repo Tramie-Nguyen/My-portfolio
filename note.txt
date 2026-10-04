@@ -28,3 +28,10 @@ Portfolio (using HTML + CSS + Vue.js):
     demo ytb:
     
 (python, 2/3/2025): https://github.com/Tramie-Nguyen/search_algorithms_AI
+
+
+I am a third-year **Information Systems** student at [**HCMUS (VNU-HCM).**](https://hcmus.edu.vn/ "HCMUS's link page")
+
+My career interests are **Business Analysis, Data Engineering, Database Administration, and Web Development**. I focus on analyzing requirements, designing information systems, and working with data to develop practical and reliable solutions.
+
+I am currently seeking an **internship or fresher position** to gain hands-on experience and grow in a professional environment.

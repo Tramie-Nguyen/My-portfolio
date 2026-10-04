@@ -427,14 +427,6 @@ a {
   color: var(--background-color);
 }
 
-/* ba-and-sa */
-.skills .ba-and-sa .content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 90px;
-}
-
 .business-process,
 .system-analysis,
 .system-design {
@@ -452,14 +444,6 @@ a {
   text-align: center;
   font-size: 21px;
   padding: 20px 25px 10px;
-}
-
-.skills .ba-and-sa .content ol {
-  list-style: disc;
-  font-size: 17px;
-  padding: 0px 30px;
-  padding-bottom: 20px;
-  line-height: 28px;
 }
 
 .business-process:hover,
@@ -657,6 +641,31 @@ a {
   box-shadow:
     0 0 25px var(--darker-color),
     0 0 50px var(--darker-color);
+}
+
+.contact form .right button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+  transform: none;
+}
+
+.contact .form-status,
+.contact .mailto {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 17px;
+}
+
+.contact .form-status p {
+  margin-top: 30px;
+}
+
+.contact .form-status .error {
+  color: hsl(0, 85%, 70%);
+}
+
+.contact .mailto {
+  margin-top: 30px;
 }
 
 /*footer*/
@@ -911,12 +920,6 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 0;
-  }
-
-  .skills .ba-and-sa .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
   }
 
   .business-process,
