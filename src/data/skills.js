@@ -6,6 +6,7 @@ export const skillGroups = [
       { name: "C++", image: "images/c++.webp" },
       { name: "Python", image: "images/python.webp" },
       { name: "JavaScript", image: "images/JS.webp" },
+      { name: "Java", image: "images/java.png" },
     ],
   },
   {

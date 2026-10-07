@@ -73,7 +73,7 @@ export const projects = [
         label: "Source code",
         url: "https://github.com/Tramie-Nguyen/My-portfolio",
       },
-      { label: "Live Demo", url: "" },
+      { label: "Live Demo", url: "https://my-portfolio-2hf1.onrender.com" },
     ],
   },
   {
