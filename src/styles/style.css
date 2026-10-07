@@ -220,7 +220,9 @@ section {
   color: var(--main-color);
   position: relative;
   top: 0;
-  animation: slide 21s steps(5) infinite;
+  /* 4 roles x 4s typing cycle = 16s; each step swaps the role while the
+     typing cover is fully closed, so the change is never visible */
+  animation: slide 16s steps(4) infinite;
 }
 
 .text-animation .option li::after {
@@ -231,18 +233,22 @@ section {
   left: 0;
   background: var(--background-color);
   border-left: 2px solid var(--main-color);
-  animation: typing 4s steps(31) infinite;
+  animation: typing 4s infinite;
 }
 
+/* steps() per segment: type in, hold, erase, short pause while covered */
 @keyframes typing {
   0%,
-  20% {
+  8% {
     left: 0;
+    animation-timing-function: steps(24);
   }
   40%,
-  60% {
-    left: calc(100% + 20px);
+  70% {
+    left: calc(100% + 4px);
+    animation-timing-function: steps(18);
   }
+  92%,
   100% {
     left: 0;
   }
@@ -250,7 +256,7 @@ section {
 
 @keyframes slide {
   100% {
-    top: -225px;
+    top: -180px;
   }
 }
 

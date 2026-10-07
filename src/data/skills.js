@@ -30,6 +30,7 @@ export const skillGroups = [
       { name: "SQL Server", image: "images/sql-server.webp" },
       { name: "Oracle Database", image: "images/oracle.webp" },
       { name: "MongoDB", image: "images/mongodb.png" },
+      { name: "PostgreSQL", image: "images/postgreSQL.png" },
     ],
   },
   {
@@ -39,6 +40,7 @@ export const skillGroups = [
       { name: "GitHub", icon: "fa-brands fa-github" },
       { name: "Postman", icon: "fa-solid fa-paper-plane" },
       { name: "Figma", image: "images/figma.webp" },
+      { name: "Docker", image: "images/docker.png" },
     ],
   },
 ];
